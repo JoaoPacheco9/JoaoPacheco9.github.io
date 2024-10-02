@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem</title>
+</head>
+<body>
+    
+<form method="get" action="https://postman-echo.com/get"> 
 
+    <fieldset>
+<legend>Dados pessoais</legend>
+
+<p>Nome: <input type="text" name="nome" placeholder="Insira o seu nome"></p>
+<p>Apelido: <input type="text" name="apelido" placeholder="Insira o seu apelido"></p>
+<p>Email: <input type="email" name="email" placeholder="Insira o seu email"></p>
+<p>Data de partida: <input type="dateP" name="data"></p>
+<p>Data de Regresso: <input type="dateR" name="data"></p>
+<p>Número de passageiros: <input type="number" name="numero" placeholder="Digite o numero de passageiros" maxlength="8"></p>
+<p>Meio de transporte favorito:
+     <select>
+<option>Carro</option>
+<option>Comboio</option>
+<option>Avião</option>
+<option>Entre outros</option>
+</select>
+</p>
+
+<p>Qual o serviço que deseja na sua viagem?
+    <label>
+        <input type="radio" name="servico" value="basico"> Basico
+    </label>
+    <label>
+        <input type="radio" name="servico" value="preemium"> preemium
+    </label>
+</p>
+<label for="comentarios">Pedidos especiais:</label>
+<textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite aqui o seu pedido"></textarea>
+
+
+<label for="comentarios">Qual o valor que espera gastar por pessoa e por dia na sua viagem.</label>
+<input type="range" min="0" max="10" step="0.5" value="0">
+
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>

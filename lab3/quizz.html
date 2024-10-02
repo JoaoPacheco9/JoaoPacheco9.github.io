@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+</head>
+<body>
+    <h2>Quizz</h2>
 
+    <form method="get" action="https://postman-echo.com/get">
+
+ <fieldset>
+
+<legend>Indentificaçao</legend>
+<P>Nome: <input type="text" name="nome" placeholder="Insira o seu nome" maxlength="12"></P>
+<P>Apelido: <input type="text" name="apelido" value="apelido" maxlength="12" ></P>
+<P>Email: <input type="email" name="emial" required size="25"></P>
+
+ </fieldset>
+
+        <!-- Pergunta 1: Texto -->
+        <fieldset>
+            <legend>1. Qual é o nome original da cidade do Lubango?</legend>
+            <label for="nome-cidade">Nome:</label>
+            <input type="text" id="nome-cidade" name="nome-cidade" placeholder="Escreva o nome original..." autofocus>
+        </fieldset>
+
+        <!-- Pergunta 2: Data -->
+        <fieldset>
+            <legend>2. Quando foi fundada a cidade do Lubango?</legend>
+            <label for="data-fundacao">Data de Fundação:</label>
+            <input type="date" id="data-fundacao" name="data-fundacao">
+        </fieldset>
+
+        <!-- Pergunta 3: Radio -->
+        <fieldset>
+            <legend>3. Qual é o ponto turístico mais famoso de Lubango?</legend>
+            <label>
+                <input type="radio" name="ponto-turistico" value="cristo-rei"> Cristo Rei
+            </label>
+            <label>
+                <input type="radio" name="ponto-turistico" value="serra-leba"> Serra da Leba
+            </label>
+            <label>
+                <input type="radio" name="ponto-turistico" value="fenda-tundavala"> Fenda da Tundavala
+            </label>
+        </fieldset>
+
+        <!-- Pergunta 4: Checkbox -->
+        <fieldset>
+            <legend>4. Quais destes eventos ocorrem em Lubango?</legend>
+            <label>
+                <input type="checkbox" name="evento" value="feira-agropecuaria"> Feira Agropecuária
+            </label>
+            <label>
+                <input type="checkbox" name="evento" value="corrida-sao-silvestre"> Corrida de São Silvestre
+            </label>
+            <label>
+                <input type="checkbox" name="evento" value="festas-povo"> Festas do Povo
+            </label>
+        </fieldset>
+
+        <!-- Pergunta 5: Select -->
+        <fieldset>
+            <legend>5. Qual é o clima predominante em Lubango?</legend>
+            <label for="clima">Escolha o clima:</label>
+            <select id="clima" name="clima">
+                <option value="tropical">Tropical</option>
+                <option value="semi-arido">Semiárido</option>
+                <option value="temperado">Temperado</option>
+            </select>
+        </fieldset>
+
+        <!-- Pergunta 6: Datalist -->
+        <fieldset>
+            <legend>6. Quais são as atrações naturais da cidade?</legend>
+            <label for="atracoes">Atrações:</label>
+            <input list="atracoes-list" id="atracoes" name="atracoes" placeholder="Escolha uma atração" autocomplete="on">
+            <datalist id="atracoes-list">
+                <option value="Cristo Rei"></option>
+                <option value="Serra da Leba"></option>
+                <option value="Fenda da Tundavala"></option>
+            </datalist>
+        </fieldset>
+
+        <!-- Pergunta 7: Cor Favorita -->
+        <fieldset>
+            <legend>7. Qual cor você associa ao Lubango?</legend>
+            <label for="cor-lubango">Escolha uma cor:</label>
+            <input type="color" id="cor-lubango" name="cor-lubango">
+        </fieldset>
+
+        <!-- Pergunta 8: Intervalo -->
+        <fieldset>
+            <legend>8. Numa escala de 0 a 10, quanto você recomenda visitar Lubango?</legend>
+            <label for="recomendacao">Recomendação:</label>
+            <input type="range" id="recomendacao" name="recomendacao" min="0" max="10" step="0.5" value="5" >
+        </fieldset>
+
+        <!-- Pergunta 9: Horário de visita -->
+        <fieldset>
+            <legend>9. Qual horário você prefere visitar o Cristo Rei?</legend>
+            <label for="hora-visita">Horário:</label>
+            <input type="time" id="hora-visita" name="hora-visita">
+        </fieldset>
+
+        <!-- Pergunta 10: Número -->
+        <fieldset>
+            <legend>10. Quantas vezes já visitou Lubango?</legend>
+            <label for="visitas">Número de visitas:</label>
+            <input type="number" id="visitas" name="visitas" min="0" max="100">
+        </fieldset>
+
+        <!-- Pergunta 11: Comentário -->
+        <fieldset>
+            <legend>11. Comentários sobre sua experiência no Lubango</legend>
+            <label for="comentarios">Deixe o seu comentário:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escreva aqui suas impressões..."></textarea>
+        </fieldset>
+
+        <!-- Pergunta 12: Imagem (decorativa) -->
+        <fieldset>
+            <legend>12. Imagem de Lubango (decorativa)</legend>
+            <label for="imagem-lubango">Veja uma imagem de Lubango:</label>
+            <input type="image" id="imagem-lubango" name="imagem-lubango" src="lubango.jpg" alt="Imagem da cidade de Lubango">
+        </fieldset>
+
+        <!-- Botões -->
+        <fieldset>
+            <legend>Ações</legend>
+            <input type="submit" value="Enviar Respostas">
+            <input type="reset" value="Limpar Formulário">
+        </fieldset>
+    </form>
+</body>
+</html>
